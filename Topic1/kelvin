@@ -1,0 +1,12 @@
+#Third example: Reading arguments from the command line
+echo "Multiplying all the arguments"
+product=0
+
+#$* means arguments
+for myval in $*
+do
+        (( product*=$myval ))
+done
+
+echo "The result of multiplying all the arguments is: $product"
+
