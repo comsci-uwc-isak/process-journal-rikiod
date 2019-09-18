@@ -18,7 +18,6 @@ for (( f=0; f<100; f++ )); do
         echo "Creating file $f."
         echo "Message #$F" > file_$f.txt
 done
-rmdir test
 echo "Task completed."
 exit
 ```
