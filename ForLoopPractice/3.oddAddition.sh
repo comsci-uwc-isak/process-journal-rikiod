@@ -1,13 +1,19 @@
 #!/bin/bash
 
-#This program prints the addition of all (both odd and even) numbers from one to a thousand.
+#This program will add all odd numbers from 1 to 1000 and then it will add all even numbers from 1 to 1000.
 
-sum=0
-
-for (( i = 1; i <=1000; i++ )); do
-	(( sum=$sum+$i ))
+#Adding odd values
+oddSum=0
+for (( o = 1; o < 1000; o+=2 )); do
+    ((oddSum=$oddSum+$o))
 done
 
-echo $sum
+#Adding even numbers
+evenSum=0
+for (( e = 2; e < 1001; e+=2 )); do
+    ((evenSum=$evenSum+$e))
+done
 
-
+#Communicating sums to values
+echo "The sum of all the odd numbers from 1 to 1000 is $oddSum."
+echo "The sum of all even numbers from 1 to 1000 is $oddEven."
